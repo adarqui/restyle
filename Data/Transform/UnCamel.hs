@@ -40,7 +40,7 @@ unCamelHTML r (a:b:c:cs)
 unCamelHTML r (a:bs@(b:cs))
     | step a b              =  a  : r : b : unCamelHTML r cs
     | otherwise             =  a  : unCamelHTML r bs
-unCamelHTML r cs            =  cs
+unCamelHTML _ cs            =  cs
 
 hump :: Char -> Char -> Char -> Bool
 hump a b c  = isLower a && isUpper b && isLower c
@@ -110,4 +110,4 @@ code r (a:b:c:cs)
 code r (a:bs@(b:cs))
     | step a b    =  a  : r : b : code r cs
     | otherwise                 =  a  : code r bs
-code r cs                       =  cs
+code _ cs                       =  cs

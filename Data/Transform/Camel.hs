@@ -13,7 +13,7 @@
 ------------------------------------------------------------------------
 module Data.Transform.Camel (camelSource) where
 
-import Data.Char (isLower, isUpper, isAlpha, toUpper)
+import Data.Char (isLower, isAlpha, toUpper)
 import Data.Transform.Utils
 
 -- | Transform Haskell code written in separated_words style
