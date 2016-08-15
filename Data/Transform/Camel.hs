@@ -15,6 +15,7 @@ module Data.Transform.Camel (camelSource) where
 
 import Data.Char (isLower, isAlpha, toUpper)
 import Data.Transform.Utils
+import Prelude
 
 -- | Transform Haskell code written in separated_words style
 --   to the more common camelCase style.

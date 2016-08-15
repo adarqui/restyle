@@ -17,6 +17,7 @@ module Data.Transform.UnCamel ( -- * Transformation Functions
 
 import Data.Char (isLower, isUpper, toLower)
 import Data.Transform.Utils
+import Prelude
 
 -- | Transform identifiers in (haddock-produced) HTML files from
 --   camelCase to separated_words.

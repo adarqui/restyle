@@ -13,10 +13,10 @@
 module Data.Transform.Utils where
 
 import Data.Char
-
+import Prelude
 
 isOpChar :: Char -> Bool
-isOpChar c  = c `notElem` "(),;[]`{}_'\"" && (isSymbol c || isPunctuation c)
+isOpChar c  = c `notElem` ("(),;[]`{}_'\"" :: String) && (isSymbol c || isPunctuation c)
 
 isIdChar :: Char -> Bool
 isIdChar c = c == '\'' || isIdPlain c

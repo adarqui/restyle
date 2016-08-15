@@ -17,6 +17,8 @@ module Data.Transform.Separators ( -- * Separation Characters
                                  , wideLowLine
                                  ) where
 
+import Prelude
+
 -- | Unicode hyphen, U+2010
 hyphen          :: Char
 hyphen          = '\x2010'
