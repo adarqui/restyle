@@ -21,5 +21,4 @@ Library
     Exposed-Modules:    Data.Transform.Camel, Data.Transform.UnCamel,
                         Data.Transform.Separators
     Other-Modules:      Data.Transform.Utils
-    default-extensions: NoImplicitPrelude
     ghc-options:        -Wall
